@@ -18,9 +18,10 @@ Windows 10 Home 64bit + Python 3.8.3で動作を確認しています。
 pip install ibm-watson
 ```
 
-## Speech to Textの資格情報
+### Speech to Textの資格情報
 
-IBM CloudのSpeech to Textのページのから、管理→資格情報→ダウンロードをクリックし、ダウンロードした`ibm-credentials.env`を`main.py`と同じディレクトリに配置してください。
+まずは[ここ](https://cloud.ibm.com/catalog/services/speech-to-text)からSpeech to Textのインスタンスを作成します。
+そして、Speech to Textのページから、管理→資格情報→ダウンロードをクリックし、ダウンロードした`ibm-credentials.env`を`main.py`と同じディレクトリに配置してください。
 
 ## 実行方法
 
@@ -28,4 +29,5 @@ IBM CloudのSpeech to Textのページのから、管理→資格情報→ダウ
 python main.py
 ```
 で実行できます。
+「Service is listening」と表示されたら、マイクに向かって日本語で話してください。
 `Ctrl+c`で終了できます。
